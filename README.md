@@ -5,6 +5,7 @@ Code for the server, sample client, and SQLite database
 1. Install SQLite via "sudo apt-get install sqlite"
 2. Make database by "sqlite3 trackeeer"
 3. Create the table after inputting "sqlite> CREATE TABLE trackeeed (tracked_user text, desc text, gen_location text, last_update text);"
+4. Don't forget to exit by inputting "sqlite> .quit"
 
 ## Update (May 5, 2017)
 1. Filtering of data to remove Service Set Identifiers (SSIDs) and their corresponding Recieved Signal Strength Indicators (RSSIs) that are not Access Points was done in preparation for determining the general location. This filtering system was made on the assumption that the access points have a pattern to naming.

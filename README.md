@@ -11,4 +11,8 @@ Code for the server, sample client, and SQLite database
 2. The maximum RSSI and the corresponding SSID is now determined by the server. This was done by adding dummy data in the code for testing.
 3. Parsing of data is underway.
 
+## Update (May 6, 2017)
+1. Parsing of JSON object is done. Sampleclient.py was edited in order to send a sample JSON object with dummy data.
+2. Database successfully updates id, description, closest access point, and time of update.
+
 //The database is subject to change and was initially made for testing purposes.

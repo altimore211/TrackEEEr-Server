@@ -3,12 +3,13 @@
 #        a. To make sqlite3 database, install via "sudo apt-get install sqlite"
 #        b. Make database by "sqlite3 trackeeer"
 #        c. Create table by "sqlite> CREATE TABLE trackeeed (tracked_user text, desc text, gen_location text, last_update text);"
+#        d. Don't forget to exit by inputting "sqlite> .quit"
 #
 #       Update (May 05 2017) - Tested with sampleclient.py and dummy data. Works.
 
 #   May 02 2017 - Added socket communication functionality
 #   May 05 2017 - Added filtering of data received and max RSSI detection
-#   May 06 2017 - Added parsing of json object
+#   May 06 2017 - Added parsing of json object and database update
 
 from datetime import datetime
 import time

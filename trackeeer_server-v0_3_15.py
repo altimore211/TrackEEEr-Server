@@ -82,7 +82,7 @@ def main():
             #Prints out the closest access point relative to the device connected.
             for i in RSSIS:
                 if i == m:
-                    print SSIDS[ctr]
+                    print SSIDS[ctr] + " is the closest access point."
                     gen_location = SSIDS[ctr] #general location is for now temporarily set as the SSID
 
                     access_pt += 1
@@ -94,7 +94,17 @@ def main():
                 print "The person is close to these multiple access points."
                 #In the occasion that access points have the same rrsi
             else:
-                print "The person is close to this access point."
+                #determining real world position based on access point
+		if gen_location == "AccessPoint1":
+			print "%s is on the 1st floor" %(ID)
+		elif gen_location == "AccessPoint2":
+			print "%s is on the 2nd floor" %(ID)
+		elif gen_location == "AccessPoint3":
+			print "%s is on the 3rd floor" %(ID)
+		elif gen_location == "AccessPoint4":
+			print "%s is on the 4th floor" %(ID)
+		elif gen_location == "AccessPoint2":
+			print "%s is on the 5th floor" %(ID)
 
             print "INSERT INTO trackeeed VALUES ('%s','%s','%s','%s')" % (ID, faculty, gen_location, last_update)
             #Inserts new row of data

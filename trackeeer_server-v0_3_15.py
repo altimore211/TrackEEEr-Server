@@ -72,6 +72,9 @@ def main():
                     RSSIS.append(received_RSSIS[remove_counter])
                 remove_counter += 1
 
+	    if SSIDS == []:
+		print("Location of user is unknown.")
+		continue
             m = max(RSSIS)
             i = 0
             ctr = 0
